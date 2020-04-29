@@ -25,7 +25,7 @@ const configuration: NuxtConfiguration = {
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['~/assets/style/main.styl'],
   /*
    ** Plugins to load before mounting the App
    */
@@ -42,7 +42,8 @@ const configuration: NuxtConfiguration = {
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
-    '@nuxtjs/dotenv'
+    '@nuxtjs/dotenv',
+    '@nuxtjs/style-resources'
   ],
   /*
    ** Axios module configuration
@@ -61,7 +62,10 @@ const configuration: NuxtConfiguration = {
   dotenv: {
     path: process.cwd()
   },
-  srcDir: 'src'
+  srcDir: 'src',
+  styleResources: {
+    stylus: '~/assets/style/prepend.styl'
+  }
 }
 
 export default configuration
