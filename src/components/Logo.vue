@@ -31,18 +31,14 @@ import { Component, Vue } from 'nuxt-property-decorator'
 export default class Logo extends Vue {}
 </script>
 
-<style>
-.NuxtLogo {
-  animation: 1s appear;
-  margin: auto;
-}
+<style lang="stylus">
+.NuxtLogo
+  animation 1s appear
+  margin auto
 
-@keyframes appear {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+@keyframes appear
+  0%
+    opacity 0
+  100%
+    opacity 1
 </style>
