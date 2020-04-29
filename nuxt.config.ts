@@ -57,7 +57,11 @@ const configuration: NuxtConfiguration = {
      ** You can extend webpack config here
      */
     extend(config, ctx) {}
-  }
+  },
+  dotenv: {
+    path: process.cwd()
+  },
+  srcDir: 'src'
 }
 
 export default configuration
